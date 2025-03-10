@@ -1,0 +1,141 @@
+*{
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+body{
+    background-color: hwb(0 0% 100%);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2.1;
+} 
+
+/*Navigation*/
+nav {
+    background-color: rgba(117, 191, 252, 0.92);
+    padding: 10px 0;
+    text-align: center;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+}
+
+nav ul li {
+    margin: o 15px;
+}
+
+nav ul li a {
+    color: rgb(20, 20, 20);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: black;
+}
+
+/*main title section*/
+.title-section {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: rgb(112, 165, 222);
+    border-bottom: 1px solid #ccc;
+}
+
+.title-section h1 {
+    font-size: 36px;
+    color: #0f0f0f;
+    margin-bottom: 20px;
+}
+
+.title-section .profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid #ffc107;
+    justify-content: left;
+    align-items: self-start;
+}
+ /*content sections*/
+ .content-section{
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+ }
+
+ .content-section h2 {
+    font-size: 28px;
+    color: #67d4f8;
+    margin-bottom: 20px;
+ }
+
+ .content-section p {
+    font-size: 18px;
+    color: #63d9f0;
+ }
+
+ /*gallery section*/
+
+ .gallery-section {
+    padding: 20px 20px;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+ }
+
+ .gallery-section h2 {
+    font-size: 28px;
+    color: #fa5fdb;
+    margin-bottom: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(0.5);
+}
+
+/*footer*/
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0a0909;
+    color: hsl(191, 98%, 68%);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/*responsive design*/
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        margin: 10px 0;
+    } 
+
+    .title-section h1{
+        font-size: 28px;
+    }
+
+    .content-section h2,
+    .galery-section h2 {
+        font-size: 24px;
+    }
+    .content-section p {
+    font-size: 24px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
